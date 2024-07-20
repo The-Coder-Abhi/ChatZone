@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/knewave01"
+        android:text="Step 02: "
+        android:textColor="#808080"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Usertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step2"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/knewave01"
+        android:text="User Info: "
+        android:textColor="@color/CZColor"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/UserNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Usertxt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/UN"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginStart="15dp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Username"
+        android:hint="@string/UN"
+        app:startIconDrawable="@drawable/user"
+        app:endIconMode="clear_text"
+        app:endIconTint="#808080"
+        app:boxStrokeColor="@color/CZColor"
+        android:layout_below="@id/UserNameText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/CZColor">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/EmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Username"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginStart="15dp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:id="@+id/Email"
+        app:startIconDrawable="@drawable/email"
+        app:endIconMode="clear_text"
+        app:endIconTint="#808080"
+        app:boxStrokeColor="@color/CZColor"
+        android:layout_below="@id/EmailText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/CZColor"
+            android:inputType="textEmailAddress">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/PasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Email"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/pwd"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginStart="15dp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/pwd"
+        android:id="@+id/Password01"
+        app:startIconDrawable="@drawable/key"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#808080"
+        app:boxStrokeColor="@color/CZColor"
+        android:layout_below="@id/PasswordText">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/CZColor"
+            android:inputType="textPassword">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/PasswordText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password01"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/pwd02"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginStart="15dp"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/pwd02"
+        android:id="@+id/Password02"
+        app:startIconDrawable="@drawable/key"
+        app:endIconMode="clear_text"
+        app:endIconTint="#808080"
+        app:boxStrokeColor="@color/CZColor"
+        android:layout_below="@id/PasswordText01">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/CZColor">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/Sign_Up02"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Password02"
+        android:layout_marginTop="15dp"
+        android:text="@string/Sign_Up"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Exception"
+        android:textSize="22sp"
+        android:textColor="#808080"
+        android:textStyle="bold"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Sign_Up02"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sign_In"
+        android:textSize="23sp"
+        android:textColor="@color/CZColor"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/Sign_Up02">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/back"
+        android:background="@color/white"
+        android:contentDescription="@string/Back"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar01"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+    </ProgressBar>
+</RelativeLayout>

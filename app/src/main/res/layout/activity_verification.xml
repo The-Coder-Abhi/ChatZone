@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificationActivity">
+    <ImageButton
+        android:id="@+id/back01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/back"
+        android:background="@color/white"
+        android:contentDescription="@string/Back"
+        />
+    <TextView
+        android:id="@+id/Verify01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Verify"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/CZColor"
+        android:fontFamily="@font/knewave01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp">
+    </TextView>
+    <TextView
+        android:id="@+id/VerifyEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Verification Email is sent to your email id please verify to continue."
+        android:textAlignment="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_below="@id/Verify01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+    </TextView>
+    <Button
+        android:id="@+id/verify01"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/VerifyEmailText"
+        android:layout_marginTop="20dp"
+        android:text="@string/Verify"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pB"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+    </ProgressBar>
+
+</RelativeLayout>

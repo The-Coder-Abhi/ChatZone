@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "260971590884",
+    "firebase_url": "https://chatzone01-f2379-default-rtdb.firebaseio.com",
+    "project_id": "chatzone01-f2379",
+    "storage_bucket": "chatzone01-f2379.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260971590884:android:75dc3ce71b846ab40a68f1",
+        "android_client_info": {
+          "package_name": "com.example.chatzone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260971590884-rdplgbnu12sq1eoltvj10t52b9gv4pdc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIk1ktdmGIqYY6S6OTXLb-KXOYY4xaMrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260971590884-rdplgbnu12sq1eoltvj10t52b9gv4pdc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

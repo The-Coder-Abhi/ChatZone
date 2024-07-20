@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPActivity">
+
+    <TextView
+        android:id="@+id/enterotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/knewave01"
+        android:text="Enter OTP: "
+        android:textStyle="bold"
+        android:textColor="@color/CZColor"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/enterotp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textAlignment="center">
+    </EditText>
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/otp"></Button>
+
+</RelativeLayout>

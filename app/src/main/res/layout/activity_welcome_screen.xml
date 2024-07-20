@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreen"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_above="@+id/CZ01"
+        android:layout_centerHorizontal="true">
+    </TextView>
+    <TextView
+        android:id="@+id/CZ01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/cap_app_name"
+        android:fontFamily="@font/knewave01"
+        android:textColor="@color/CZColor"
+        android:textSize="45sp"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CZ01"
+        android:layout_centerHorizontal="true"
+        android:text="The Chat Application For Kids."
+        android:textSize="20sp"
+        android:textStyle="italic"></TextView>
+
+    <Button
+        android:id="@+id/Sign_In01"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="SIGN IN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:onClick="SignInPage"/>
+    <Button
+        android:id="@+id/Sign_Up01"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="SIGN UP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="530dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:onClick="SignUpPage"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chat"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true">
+    </ImageView>
+
+
+</RelativeLayout>
