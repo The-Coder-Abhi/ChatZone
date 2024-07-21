@@ -1,5 +1,5 @@
 CHAPTER 1: Introduction
-1.1 Introduction/Abstract:
+1.1 Introduction:
 One day I was researching on the internet for an idea for my project and found an article about chat applications.
 According to that article “80% of adults aged 19-64 and 91% of teens aged 13-18 uses chat app”. The reasons people use chat/messaging applications are:
 No hold times
